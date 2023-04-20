@@ -1,0 +1,26 @@
+<h1 class="text-success">Objetivo 4</h1>
+<a href="#descripcion">
+  <div id="cartas">
+    <mat-card class="example-card cartaFixed" *ngFor="let product of productos" (click)="mostrarSeleccionado(product)">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{product.titulo}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="product.imagen" alt="{{product.titulo}}">
+      <mat-card-content>
+        <span>Tipo de envio: {{product.tipoEnvio}}</span>
+        <span>Precio: {{product.precio}}$</span>
+        <a routerLink="/descripcion/{{product.id}}">Ver descripcion</a>
+      </mat-card-content>
+    </mat-card>
+</div>
+</a>
+<ng-container *ngIf="encontrado">
+  <div [ngClass]="{descripcion : encontrado}" id="descripcion">
+    <p *ngIf="productoSelect.precio > 100">Carito, vale!</p>
+    <h2 [style.font-size]="productoSelect.precio > 100 ? 'x-large': 'medium'">Nombre del producto:{{productoSelect.titulo}}</h2>
+    <h5 [style.font-size]="productoSelect.precio > 100 ? 'x-large': 'medium'">Tipo de envio: {{productoSelect.tipoEnvio}}</h5>
+    <p [style.font-size]="productoSelect.precio > 100 ? 'x-large': 'medium'">Precio: {{productoSelect.precio}}$</p>
+    <img [src]="productoSelect.imagen" alt="{{productoSelect.titulo}}">
+  </div>
+</ng-container>
