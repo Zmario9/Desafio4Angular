@@ -2,10 +2,13 @@ header {
     display: flex;
     flex-flow: column nowrap;
     padding: 8px 10px 2px 10px;
-    height: 82px;
+    height: 100px;
     width: 100%;
     background-color: #FDF161;
     align-items: center;
+    img{
+        height: 100%;
+    }
 }
 
 header > div {
@@ -15,9 +18,12 @@ header > div {
     align-items: center;
 }
 
-header > div:nth-child(1) > img{
+header > div:nth-child(1) > a{
     height: 34px;
     margin: 5px;
+    img{
+        height: 100%;
+    }
 }
 
 header > div:nth-child(1) {
@@ -27,7 +33,7 @@ header > div:nth-child(1) {
 
 header > div:nth-child(1) > input {
     padding: 10px 60px 10px 15px;
-    height: 20px;
+    height: 35px;
     width: 555px;
     margin-right: 50px;
     background-image: url("https://assets.stickpng.com/images/59cfc4d2d3b1936210a5ddc7.png");
@@ -57,7 +63,7 @@ header > div:nth-child(2) > span > ion-icon{
 }
 
 header > div:nth-child(2) > ul {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-flow: row nowrap;
     list-style: none;

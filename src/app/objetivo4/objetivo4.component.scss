@@ -1,0 +1,38 @@
+#cartas{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: aquamarine;
+    justify-content: space-around;
+    .cartaFixed{
+        width: 33%;
+        margin: 5px;
+        color: aqua;
+        img{
+            height: 400px;
+            background-position: center;
+            object-fit: cover;
+        }
+        mat-card-content{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+    }
+}
+.descripcion{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: #D7D7D7;
+    h2{
+        color: rgb(14, 67, 136)
+    }
+    img{
+        border: 5px solid aquamarine;
+        border-radius: 10px;
+        height: 100px;
+    }
+}
+.fuenteGrande{
+    font-size: x-large;
+    color: green;
+}

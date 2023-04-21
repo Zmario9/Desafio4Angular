@@ -1,0 +1,61 @@
+<app-header></app-header>
+<!-- <p>descripcion works! {{getIdroute()}}</p> -->
+<!-- <img src="{{productos[getIdroute()-1].imagen}}" alt="imageeen"> -->
+<main>
+    <div id="descripciones">
+        <div id="gustar">
+            <span id="tambien">Tambien podria interesarte: </span><span id="podriainteresante">computadora - canaima - antminer s9 - laptop canaima - canaima letras rojas</span>
+        </div>
+        <div id="breadCrumbs">
+            <div id="parteIzquierda">
+                <span>Volver al listado</span>
+                <div></div>
+                <span>Computacion</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <span>Accesorios para PC Gaming</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <span>{{productos[getIdroute()-1].titulo}}</span>
+            </div>
+            <div id="parteDerecha">
+                <span>Compartir</span>
+                <div></div>
+                <span>Vender uno igual</span>
+            </div>
+        </div>
+        <div id="contentProduct">
+            <div>
+                <img src="{{productos[getIdroute()-1].imagen}}" alt="">
+                <img src="{{productos[getIdroute()-1].imagen}}" alt="">
+                <img src="{{productos[getIdroute()-1].imagen}}" alt="">
+            </div>
+            <img src="{{productos[getIdroute()-1].imagen}}" alt="">
+            <div id="cartaVenta">
+                <div id="cartaInterior">
+                    <div id="parteOne"><span>Nuevo</span><div></div><span>202 vendidos</span></div>
+                    <div id="parteTwo">
+                        <h3>{{productos[getIdroute()-1].titulo}}</h3><ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <div id="parteThree">
+                        <span id="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </span>
+                        <span id="opiniones">9 opiniones</span>
+                    </div>
+                    <h1>U$S {{productos[getIdroute()-1].precio}} <ion-icon name="help-circle-outline"></ion-icon></h1>
+                    <h5>Bs. 12,12</h5>
+                    <span id="payMethod">Ver los medios de pago</span>
+                    <span id="textVerde"><ion-icon name="bicycle-outline"></ion-icon> Envio gratis en todo el pais</span>
+                    <span id="textoGris">Barquisimeto, lara</span>
+                    <span id="textoAzul">Ver costos de envio</span>
+                    <span class="textosFinales">Color:<span> Negro</span></span>
+                    <span class="textosFinales final">Cantidad: <span> 1 unidad </span><ion-icon name="chevron-down-outline"></ion-icon> <p>(8) disponibles</p></span>
+                    <button id="btnComprar">Comprar ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
